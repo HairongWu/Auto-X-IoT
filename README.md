@@ -3,8 +3,6 @@
 ## Features
 ### Agents
 - Auto-X AI Server
-- Eclipse Ditto
-- Auto-X Studio
 - Auto-X ERP
 
 ### Asset List
@@ -12,7 +10,6 @@
 - City Asset
 - Parking Asset
 - Room Asset
-- Ship Asset
 
 - Electric Vehicle Asset
 - Electricity Asset (Provider and Consumer)
@@ -36,7 +33,6 @@
 - Map
 - Gateway
 - Attribute
-- KPI
 - Report
 - Drone Mission Planner
 
@@ -46,7 +42,8 @@ The quickest way to get your own environment with full access is to make use of 
 1. Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed (v18+). 
 2. Download the docker compose file:
 [OpenRemote Stack](https://raw.githubusercontent.com/openremote/openremote/master/docker-compose.yml) (Right click 'Save link as...')
-1. In a terminal `cd` to where you just saved the compose file and then run:
+
+3. In a terminal `cd` to where you just saved the compose file and then run:
 ```
     docker-compose pull
     docker-compose -p openremote up
