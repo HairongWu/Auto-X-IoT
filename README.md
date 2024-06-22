@@ -1,15 +1,13 @@
 # Auto-X IoT
 
 ## Features
-### Agents
-- Auto-X AI Server
-- Auto-X ERP
 
 ### Asset List
 - Building Asset
 - City Asset
 - Parking Asset
 - Room Asset
+- Factory Asset
 
 - Electric Vehicle Asset
 - Electricity Asset (Provider and Consumer)
@@ -21,9 +19,11 @@
 - Wind Turbine Asset
 - Weather Asset
 - Environment Sensor Asset
+- Camera Asset
 
 - People Counter Asset
 - Drone Asset
+- Robot Asset
 
 ### Widgets for Visualization
 - Image
