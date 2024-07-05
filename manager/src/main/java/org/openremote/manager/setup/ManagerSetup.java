@@ -459,7 +459,49 @@ public class ManagerSetup implements Setup {
 
         return shipAsset;
     }
+    protected CameraAsset createDemoCameraAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        CameraAsset cameraAsset = new CameraAsset(name);
+        cameraAsset.setParent(area);
+        cameraAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
 
+        return cameraAsset;
+    }
+    protected GaugeAsset createDemoGaugeAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        GaugeAsset gaugeAsset = new GaugeAsset(name);
+        gaugeAsset.setParent(area);
+        gaugeAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
+
+        return gaugeAsset;
+    }
+    protected DroneAsset createDemoDroneAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        DroneAsset droneAsset = new DroneAsset(name);
+        droneAsset.setParent(area);
+        droneAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
+
+        return droneAsset;
+    }
+
+    protected WaterMeterAsset createDemoWaterMeterAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        WaterMeterAsset waterMeterAsset = new WaterMeterAsset(name);
+        waterMeterAsset.setParent(area);
+        waterMeterAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
+
+        return waterMeterAsset;
+    }
+    protected GasMeterAsset createDemoGasMeterAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        GasMeterAsset gasMeterAsset = new GasMeterAsset(name);
+        gasMeterAsset.setParent(area);
+        gasMeterAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
+
+        return gasMeterAsset;
+    }
+    protected ElectricityMeterAsset createDemoElectricityMeterAsset(String name, Asset<?> area, GeoJSONPoint location) {
+        ElectricityMeterAsset electricityMeterAsset = new ElectricityMeterAsset(name);
+        electricityMeterAsset.setParent(area);
+        electricityMeterAsset.getAttributes().addOrReplace(new Attribute<>(Asset.LOCATION, location));
+
+        return electricityMeterAsset;
+    }
     protected void provisionAssets() throws IOException {
 
         if (!Files.exists(Paths.get(provisionDocRoot.toString(), "assets"))) {
