@@ -1,5 +1,7 @@
 # Auto-X IoT
-
+<div  align="center">
+  <img src="imgs/iot.png" width="500"/>
+</div>
 ## New Assets
 The assets are the same as OpenRemote but with the following additions:
 - Gas (Producer and Consumer) Asset
