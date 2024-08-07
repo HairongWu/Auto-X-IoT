@@ -20,8 +20,8 @@ The assets are the same as OpenRemote but with the following additions:
 2. In a terminal `cd` to where you just saved the compose file and then run:
 ```
 ./gradlew clean installDist
-docker-compose -f profile/demo.yml build
-docker-compose -f profile/demo.yml up -d
+docker-compose -f profile/dev-ui.yml build
+docker-compose -f profile/dev-ui.yml up -d
 ```
 
 ## Login credentials
